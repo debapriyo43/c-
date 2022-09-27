@@ -1,4 +1,4 @@
-#include <iostram>
+#include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 class kQueues
@@ -21,7 +21,7 @@ public:
         for (int i = 0; i < k; i++)
         {
             front[i] = -1; // initily store -1 at all elements
-            reat[i] = -1;
+            rear[i] = -1;
         }
         next = new int[n];
         for (int i = 0; i < n; i++)
@@ -65,7 +65,7 @@ public:
         if (front == -1)
         {
             cout << "Queue is empty" << endl;
-            return;
+            return -1;
         }
         // find index to pop
         int index = front[qn - 1];
