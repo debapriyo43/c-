@@ -29,7 +29,6 @@ node *buildTree(node *root)
     root->right = buildTree(root->right);
     return root;
 }
-// Comment
 void inorderTraversal(node *root)
 {                     // *******LNR********
     if (root == NULL) // In this traversal we traverse the tree by following LNR model.
